@@ -1,0 +1,19 @@
+:start
+proc urq_detector
+if isRipURQ=1 then pln The file is running in RipURQ.
+if isDosURQ then pln The file is running in URQ_DOS.
+if isAkURQ then pln The file is running in AkURQ.
+if isFireURQ then pln The file is running in FireURQ.
+if isINSTEAD then pln The file is running in URQ Module of INSTEAD.
+if isUrqW then pln The file is running in UrqW.
+if isRipURQ=0 and isDosURQ=0 and isAkURQ=0 and isFireURQ=0 and isINSTEAD=0 and isUrqW=0 then pln The file is running in an unknown URQ player.
+end
+
+:urq_detector
+if urqw_version then isUrqW=1 & end
+if urq_instead then isINSTEAD=1 & end
+if textpane_height then isFireURQ=1 & end
+if urq_type then isAkURQ=1 & end
+if urq_delay then isDosURQ=1 & end
+if urq_detector>0 then isRipURQ=1
+end
