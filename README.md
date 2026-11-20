@@ -11,7 +11,7 @@ This snippet has been adapted and tested for use with the following URQ players:
 * AkURQ version 1.28
 * FireURQ version 2.2.4
 * URQ Module of INSTEAD version 2
-* UrqW version 1.1
+* UrqW version 2.0
 
 ## Usage
 
